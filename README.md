@@ -12,12 +12,6 @@ This repository provides a **complete workflow** for processing NISAR InSAR data
 
 It enables transformation of RSLC (Radar Single Look Complex) data into geocoded deformation products through a robust interferometric processing chain.
 
-### 🔍 Key Capabilities
-- 📡 Interferogram generation  
-- 📉 Dense offset estimation  
-- 🧩 Rubbersheet correction  
-- 🌍 Geocoding  
-- 📈 Surface deformation analysis  
 
 ---
 
@@ -167,15 +161,6 @@ RUNW → GUNW
 
 ---
 
-## 📊 Output Products
-
-- 🌈 Wrapped interferogram (RIFG)  
-- 📐 Unwrapped phase (RUNW)  
-- 📉 Coherence maps  
-- 📍 Dense offset fields  
-- 🌍 Geocoded deformation products (GUNW)  
-
----
 
 ## 🧪 Common Issues & Fixes
 
@@ -215,7 +200,7 @@ conda install -c conda-forge snaphu
 ## 👨‍💻 Author
 
 **Harsha Vardhan Gosangi**  
-Research Scholar – Remote Sensing & Geoinformatics  
+Research Scholar – Geoinformatics  
 
 ---
 
