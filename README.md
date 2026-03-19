@@ -25,8 +25,6 @@ It enables transformation of RSLC (Radar Single Look Complex) data into geocoded
 ### 🖥️ Operating System
 
 - ✅ Ubuntu 20.04 / 22.04 (Recommended)  
-- ⚠️ Windows → Limited support (use WSL recommended)  
-- ⚠️ macOS → Possible but may require manual dependency fixes  
 
 ---
 
