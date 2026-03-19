@@ -21,6 +21,110 @@ It generates a DEM compatible with the ISCE3 InSAR workflow.
 pip install elevation rasterio
 ```
 
+## 🌍 Bounding Box (bbox) Format
+
+The bounding box defines the geographic area for DEM extraction.
+
+Format:
+
+```python
+bbox = (xmin, ymin, xmax, ymax)
+```
+
+Where:
+
+- `xmin` → minimum longitude (west)
+- `ymin` → minimum latitude (south)
+- `xmax` → maximum longitude (east)
+- `ymax` → maximum latitude (north)
+
+👉 Coordinate system: **EPSG:4326 (WGS84)**
+
+---
+
+## 📌 Example 1 — India Region
+
+```python
+bbox = (72.0, 18.0, 78.0, 23.0)
+```
+
+Covers:
+- West → 72°E  
+- South → 18°N  
+- East → 78°E  
+- North → 23°N  
+
+---
+
+## 📌 Example 2 — Small Area (City Level)
+
+```python
+bbox = (77.55, 12.90, 77.75, 13.10)
+```
+
+👉 Example: Bengaluru region
+
+---
+
+## 📌 Example 3 — Your Current Case
+
+```python
+bbox = (14.107, 11.309, 39.99, 43.177)
+```
+
+👉 Covers a large region (Africa–Europe span)
+
+---
+
+## 🧭 How to Get Bounding Box Coordinates
+
+### 🔹 Method 1 — Google Maps
+
+1. Open Google Maps  
+2. Right-click → "What's here?"  
+3. Note latitude & longitude  
+4. Choose area corners → build bbox  
+
+---
+
+### 🔹 Method 2 — QGIS
+
+1. Load your AOI (Area of Interest)  
+2. Go to:
+   ```
+   Layer → Properties → Information
+   ```
+3. Copy **Extent** values  
+
+---
+
+### 🔹 Method 3 — From SAR Data (Advanced)
+
+Bounding box can be extracted from RSLC metadata using Python.
+
+---
+
+## ⚠️ Important Tips
+
+- Longitude = **X axis**  
+- Latitude = **Y axis**  
+- Always follow order:  
+  ```
+  (min_lon, min_lat, max_lon, max_lat)
+  ```
+- Make bbox slightly larger than your study area  
+
+---
+
+## ✅ Quick Check
+
+```python
+# Correct
+bbox = (xmin, ymin, xmax, ymax)
+
+# ❌ Wrong (DO NOT swap)
+bbox = (lat, lon, lat, lon)
+```
 ---
 
 ## ⚙️ Usage
