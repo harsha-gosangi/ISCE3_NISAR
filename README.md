@@ -21,10 +21,20 @@ It enables transformation of RSLC (Radar Single Look Complex) data into geocoded
 
 ---
 
+
+### 🖥️ Operating System
+
+- ✅ Ubuntu 20.04 / 22.04 (Recommended)  
+- ⚠️ Windows → Limited support (use WSL recommended)  
+- ⚠️ macOS → Possible but may require manual dependency fixes  
+
+---
+
 ## 🛰️ Dataset Used
 
 ```
 NISAR_L1_PR_RSLC_005_172_A_008_2005_DHDH_A_20251122T024618_20251122T024652_X05007_N_F_J_001
+NISAR_L1_PR_RSLC_006_172_A_008_2005_DHDH_A_20251204T024618_20251204T024653_X05007_N_F_J_001
 ```
 
 ---
