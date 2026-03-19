@@ -52,84 +52,116 @@ conda create -n isce3 python=3.13
 ```
 Create a new conda environment named `isce3`.
 
+⚠️ Recommended: Use **Python 3.9** for stable ISCE3 workflows.
+
 ---
 
 ### 🟢 Step 2 — Activate Environment
 ```bash
 conda activate isce3
 ```
-Activate the environment.
+Activate the environment to install all dependencies inside it.
 
 ---
 
-### 🟢 Step 3 — Install GDAL
-```bash
-conda install gdal -c conda-forge
-```
-
----
-
-### 🟢 Step 4 — Install ISCE3
+### 🟢 Step 3 — Install ISCE3
 ```bash
 conda install isce3 -c conda-forge
 ```
+Installs the ISCE3 framework for NISAR InSAR processing.
 
 ---
 
-### 🟢 Step 5 — Reinstall GDAL
+### 🟢 Step 4 — Reinstall GDAL
 ```bash
 conda install gdal -c conda-forge
 ```
+Ensures compatibility between GDAL and ISCE3 dependencies.
 
 ---
 
-### 🟢 Step 6 — Install Python Libraries
+### 🟢 Step 5 — Install Python Libraries
 ```bash
 pip install pyaps3 pandas h5py pandas numpy scipy matplotlib hdf5 h5py netcdf4 gdal rasterio pyproj shapely snaphu
 ```
+Installs required Python libraries for:
+- Atmospheric correction (PyAPS3)  
+- Numerical computation (NumPy, SciPy)  
+- Data handling (Pandas)  
+- Visualization (Matplotlib)  
+- Geospatial processing (Rasterio, PyProj, Shapely)  
+- HDF5 support (h5py, NetCDF4)  
+- Phase unwrapping interface (SNAPHU)
 
 ---
 
-### 🟢 Step 7 — Install GDAL HDF5 Support
+### 🟢 Step 6 — Install GDAL HDF5 Support
 ```bash
 conda install -c conda-forge libgdal-hdf5
 ```
+Enables GDAL to read HDF5-based SAR data.
 
 ---
 
-### 🟢 Step 8 — Reinstall GDAL (Link Fix)
+### 🟢 Step 7 — Reinstall GDAL (Link Fix)
 ```bash
 conda install gdal -c conda-forge
 ```
+Re-links GDAL with HDF5 dependencies.
 
 ---
 
-### 🟢 Step 9 — Final GDAL Check
+### 🟢 Step 8 — Final GDAL Check
 ```bash
 conda install gdal -c conda-forge
 ```
+Final installation to resolve dependency conflicts.
 
 ---
 
-### 🟢 Step 10 — Generate Run Configuration
+### 🟢 Step 9 — Generate Run Configuration
 ```bash
 python -m nisar.workflows.insar --generate-config > insar.yaml
 ```
+Generates the default `insar.yaml` configuration file.
 
 ---
 
-### 🟢 Step 11 — Run InSAR Workflow
+### 🟢 Step 10 — Run InSAR Workflow
 ```bash
 python -m nisar.workflows.insar insar.yaml
 ```
+Executes the full NISAR InSAR processing pipeline.
 
 ---
 
 ## ✅ Workflow Summary
 
 ```text
-Environment Setup → Dependencies → Configuration → InSAR Processing
+Environment Setup → Dependency Installation → Configuration → InSAR Processing
 ```
+
+---
+
+## ⚠️ Important Notes
+
+- Use **Python 3.9** for stable results  
+- Avoid mixing `pip` and `conda` installations for core libraries  
+- Always generate a fresh `insar.yaml`  
+- Start processing with **frequency A (freqA)**  
+- Ensure DEM fully covers your study area  
+
+---
+
+---
+
+## ⚠️ Important Notes
+
+- Use **Python 3.9** for stable results  
+- Avoid mixing `pip` and `conda` installations for core libraries  
+- Always generate a fresh `insar.yaml`  
+- Start processing with **frequency A (freqA)**  
+- Ensure DEM fully covers your study area  
 
 ---
 
