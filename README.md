@@ -106,7 +106,7 @@ python -m nisar.workflows.insar --generate-config > insar.yaml
 ```bash
 python -m nisar.workflows.insar insar.yaml
 ```
-
+insar.yaml is located on the docs folder
 ---
 
 ## ✅ Workflow Summary
