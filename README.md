@@ -222,6 +222,11 @@ conda install -c conda-forge snaphu
 conda install pandas numpy scipy
 ```
 
+## 🌈 Interferogram Output
+
+<p align="center">
+  <img src="interferogram.png" width="70%">
+</p>
 ---
 
 ## 🌍 Applications
