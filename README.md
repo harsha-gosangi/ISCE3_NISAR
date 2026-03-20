@@ -17,7 +17,8 @@ It enables transformation of RSLC (Radar Single Look Complex) data into geocoded
 
 ## 🖥️ System Compatibility
 
-- ✅ Ubuntu 20.04 / 22.04 (Recommended)  
+- 🐧 Linux (Ubuntu 24.04 or above versions) — Recommended  
+- 🍎 macOS — Supported  
 
 ---
 
@@ -36,7 +37,7 @@ NISAR_L1_PR_RSLC_006_172_A_008_2005_DHDH_A_20251204T024618_20251204T024653_X0500
 
 | Tool | Purpose |
 |------|--------|
-| 🐍 Python 3.9 | Core environment |
+| 🐍 Python 3.13 | Core environment |
 | 🛰️ ISCE3 | InSAR processing engine |
 | 🗺️ GDAL | Raster & geospatial processing |
 | 📦 HDF5 / h5py | Data format handling |
@@ -115,29 +116,11 @@ Environment Setup → Dependency Installation → Configuration → InSAR Proces
 
 ## ⚠️ Important Notes
 
-- Use **Python 3.9** for stable results  
-- Avoid mixing `pip` and `conda` for core libraries  
 - Always generate a fresh `insar.yaml`  
-- Start processing with **freqA only**  
 - Ensure DEM fully covers your study area  
 
 ---
 
-## 📝 Configuration (insar.yaml)
-
-```yaml
-input_file_group:
-  reference_rslc_file: /path/to/reference.h5
-  secondary_rslc_file: /path/to/secondary.h5
-
-dynamic_ancillary_file_group:
-  dem_file: /path/to/dem.tif
-
-product_path_group:
-  product_path: ./output
-```
-
----
 
 ## 🔄 Processing Pipeline
 
