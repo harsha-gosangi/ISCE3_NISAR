@@ -153,15 +153,6 @@ RUNW → GUNW
 ```bash
 python -m nisar.workflows.insar --generate-config > insar.yaml
 ```
-
-### SNAPHU Error
-```bash
-conda install -c conda-forge snaphu
-```
-
-### Rubbersheet Error
-→ Use only freqA
-
 ---
 
 ## 🌈 Interferogram Output
@@ -185,7 +176,8 @@ conda install -c conda-forge snaphu
 ## 👨‍💻 Author
 
 **Harsha Vardhan Gosangi**  
-Research Scholar – Geoinformatics  
+Research Scholar
+Geoinformatics 
 
 ---
 ## 🙏 Acknowledgement
