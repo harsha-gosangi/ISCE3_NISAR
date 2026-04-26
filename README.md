@@ -167,8 +167,7 @@ python -m nisar.workflows.insar --generate-config > insar.yaml
 
 - 🌎 Earthquake deformation analysis  
 - 🌋 Volcano monitoring  
-- 🧊 Glacier motion tracking  
-- 🏗️ Infrastructure monitoring  
+- 🧊 Glacier motion tracking   
 - 🌱 Land subsidence studies  
 
 ---
