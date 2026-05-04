@@ -1,9 +1,5 @@
 # 🚀 NISAR InSAR Processing Workflow (ISCE3)
 
-<p align="center">
-  <b>End-to-End Interferometric Processing using ISCE3</b><br>
-</p>
-
 ---
 
 ## 📌 Overview
