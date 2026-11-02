@@ -2,7 +2,7 @@
 # 🚀 NISAR InSAR Processing Workflow (ISCE3)
 
 <p align="center">
-  <img src="interferogram.png" width="75%" alt="NISAR InSAR Processing">
+  <img src="files/Results/HH_Wrapped_Interferogram_extent.png" width="75%" alt="NISAR InSAR Processing">
 </p>
 
 <p align="center">
