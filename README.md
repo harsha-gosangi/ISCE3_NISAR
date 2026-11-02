@@ -340,7 +340,9 @@ Recommended practices:
 The following image illustrates an example interferogram generated during processing.
 
 <p align="center">
-  <img src="interferogram.png" width="75%" alt="NISAR Interferogram Output">
+  <img src="files/Results/HH_Coherence.png" width="75%" alt="NISAR Interferogram Output">
+  <img src="files/Results/HH_Coherence.png" width="75%" alt="NISAR Interferogram Output">
+  <img src="files/Results/HH_Coherence.png" width="75%" alt="NISAR Interferogram Output">
 </p>
 
 ---
