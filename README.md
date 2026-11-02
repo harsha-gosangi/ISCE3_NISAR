@@ -341,8 +341,8 @@ The following image illustrates an example interferogram generated during proces
 
 <p align="center">
   <img src="files/Results/HH_Coherence.png" width="75%" alt="NISAR Interferogram Output">
-  <img src="files/Results/HH_Coherence.png" width="75%" alt="NISAR Interferogram Output">
-  <img src="files/Results/HH_Coherence.png" width="75%" alt="NISAR Interferogram Output">
+  <img src="files/Results/HH_Wrapped_Interferogram_sym.png" width="75%" alt="NISAR Interferogram Output">
+  <img src="files/Results/HH_unWrapped_Interferogram_extent.png" width="75%" alt="NISAR Interferogram Output">
 </p>
 
 ---
